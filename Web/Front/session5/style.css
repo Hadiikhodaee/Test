@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sample{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+}
+
+.other{
+    margin: 10px;
+    width: 200px;
+    height: 100px;
+    background-color: orangered;
+}
+
+@media screen and (max-width:600px){
+    .sample{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+
+.other{
+    display: none;
+}
+}
+
+.bg-red{
+    background-color: red;
+}

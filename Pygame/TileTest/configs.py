@@ -1,4 +1,4 @@
-import pygame, os 
+import pygame, os
 from pygame import *
 
 FPS = 60

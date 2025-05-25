@@ -1,0 +1,112 @@
+/* .sample{
+    background-color: orangered;
+    width: 100px;
+    height: 100px;
+    transition: all 2s ease;
+}
+
+.sample:hover{
+    width: 500px;
+    height: 500px;
+    font-size: 50px;
+} */
+
+/* .sample{
+    background-color: orangered;
+    width: 100px;
+    height: 100px;
+    animation: myAnimation 3s 1s ease-in-out infinite;
+}
+
+@keyframes myAnimation {
+    from{width: 100px;}
+    to{width: 600px;}
+} */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .loading{
+    width: 100px;
+    height: 100px;
+    border: 10px solid rgba(228, 222, 222, 0.331);
+    border-left: 10px solid red;
+    border-radius: 50%;
+    animation: change 2s infinite;
+}
+
+@keyframes change{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+
+.flip-card{
+    width: 300px;
+    height: 400px;
+    perspective: 800px;
+}
+
+.flip-card:hover{
+    transform: rotateY(180deg);
+}
+
+.flip-card img{
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-back{
+    background-color: aquamarine;
+    transform: rotateY(180deg);
+}
+
+
+.parent{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: relative;
+    perspective: 200px;
+}
+
+.child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    transform-style: preserve-3d;
+    background-color: rgb(255, 77, 0);
+}
+
+.child:hover{
+    transform: translate(-50%, -50%) rotateX(45deg);
+}
