@@ -1,6 +1,6 @@
 import tkinter as tk
 import Pmw
-from tkinter import Frame, Label, Button, LEFT, RIGHT, YES, BOTH, NO, NONE, END, TOP
+from tkinter import *
 
 class SLabel(Frame):
     def __init__(self, master, leftl, rightl):
