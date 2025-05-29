@@ -18,7 +18,7 @@ while done:
                                            |             player_score is : '''f'{player_score}''''         |
                                            |             Bot_score is : '''f'{Bot_score}''''            |
                                            |             '''f'{winner}''''            |
-                                           \_________________________________________/''')
+                                           \\_________________________________________/''')
         if player_score > Bot_score :
             end_message = Fore.GREEN + end_message
         if Bot_score > player_score :
