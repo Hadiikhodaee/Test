@@ -1,3 +1,5 @@
+@import url(../template_core.css);
+
 *{
     padding: 0;
     margin: 0;
@@ -5,9 +7,29 @@
 }
 
 .sample{
-    width: 200px;
     height: 100px;
+    overflow: auto;
+}
+
+circles{
+    padding: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.circles :nth-child(1){
     background-color: red;
+}
+
+.circles :nth-child(2){
+    background-color: orange;
+}
+
+
+.circles :nth-child(3){
+    background-color: green;
 }
 
 .other{
